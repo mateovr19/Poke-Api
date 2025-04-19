@@ -39,6 +39,16 @@ Cada Pokémon se visualiza a pantalla completa junto con su información más im
 
 ## 📂 Estructura de archivos
 
+- Poke-Api/
+  - index.html
+  - styles/
+    - main.css
+  - scripts/
+    - api.js
+    - app.js
+    - ui.js
+  - README.md
+
 ---
 
 ## 📋 Autor
