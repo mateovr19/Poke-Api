@@ -1,3 +1,14 @@
+/**
+ * @version 1.0.0
+ * @author Mateo Velasquez Rodriguez
+ * @email mateo.velasquezr@udea.edu.co
+ */
+/**
+ * @ui
+ * @description Archivo que contiene las funciones para manejar la UI de la aplicación.
+ */
+
+// Renderiza las opciones del dropdown de tipos de Pokémon
 export function renderTypeOptions(types) {
   const select = document.querySelector("#typeSelect");
   select.innerHTML = `<option value="">Types</option>`;
@@ -9,6 +20,7 @@ export function renderTypeOptions(types) {
   });
 }
 
+// Renderiza la lista de Pokémon filtrados por tipo
 export function renderPokemonList(pokemons) {
   const container = document.querySelector(".slider-track");
   const cards = pokemons.map(pokemon => {
@@ -36,6 +48,7 @@ export function renderPokemonList(pokemons) {
   container.innerHTML = cards;
 }
 
+// Muestra un mensaje de error si falla la búsqueda o carga de datos
 export function renderError(message) {
   const container = document.querySelector(".slider-track");
   container.innerHTML = `

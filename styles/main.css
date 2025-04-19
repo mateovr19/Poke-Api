@@ -1,11 +1,11 @@
 h1 {
-  font-size: 3rem; /* Tamaño grande */
-  font-family: 'Poppins', Verdana, Geneva, Tahoma, sans-serif; /* Letra moderna */
+  font-size: 3rem;
+  font-family: 'Poppins', Verdana, Geneva, Tahoma, sans-serif;
   font-weight: 700;
   color: white;
   text-align: center;
-  margin-top: 40px; /* Espacio desde arriba */
-  margin-bottom: 20px; /* Espacio antes del formulario */
+  margin-top: 40px;
+  margin-bottom: 20px;
 }
 
 body {
@@ -46,7 +46,6 @@ body {
     transition: transform 0.5s ease;
 }
 
-/* Cada slide ocupa toda la pantalla */
 .slide {
   min-width: 100vw;
   height: 100vh;
@@ -61,7 +60,7 @@ body {
 /* Ajuste general para pantallas pequeñas */
 @media (max-width: 768px) {
   .slide-inner {
-    flex-direction: column; /* Cambia de fila a columna */
+    flex-direction: column;
     width: 90%;
     height: auto;
     gap: 20px;
@@ -69,7 +68,7 @@ body {
   }
 
   .full-img {
-    width: 70%; /* Más pequeña la imagen */
+    width: 70%;
     max-width: 300px;
   }
 
@@ -117,7 +116,6 @@ body {
   gap: 100px;
 }
 
-/* Imagen del Pokémon */
 .full-img {
   width: 900px;
   max-width: 40%;
@@ -125,20 +123,20 @@ body {
   object-fit: contain;
 }
 
-/* Panel de información, siempre visible */
 .info-panel {
   width: 500px;
   padding: 30px;
-  background: rgba(255, 255, 255, 0.7); /* 👈 Más neutro y sólido */
+  background: rgba(255, 255, 255, 0.7);
   border-radius: 16px;
   box-shadow: 0 6px 16px rgba(0, 0, 0, 0.2);
   text-align: left;
   color: black;
   font-family: 'Poppins', Verdana, Geneva, Tahoma, sans-serif;
-  font-size: 1.2rem; /* 🔥 Letra más grande */
-  line-height: 1.6; /* 🔥 Mejor separación de líneas */
+  font-size: 1.2rem;
+  line-height: 1.6;
   border: 2px solid rgba(206, 25, 230, 0.5);
 }
+
 .slider-button {
   position: absolute;
   top: 50%;
@@ -162,7 +160,7 @@ body {
 }
 
 .form-container {
-  margin-top: 60px; /* MÁS separación del título */
+  margin-top: 60px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -170,39 +168,39 @@ body {
   flex-wrap: wrap;
 }
   
-  .select-type {
-    padding: 14px 20px; /* Más padding vertical y horizontal */
-    font-size: 1.2rem; /* Texto más grande */
-    border-radius: 10px;
-    border: 3px solid rgb(97, 87, 226);
-    background-color: white;
-    color: black;
-    outline: none;
-    width: 250px; /* Más ancho */
-    transition: all 0.3s ease;
-  }
-  
-  .select-type:hover {
-    border-color: #0077ff;
-  }
-  
-  .select-type:focus {
-    border-color: #0056b3;
-    background-color: #e0f0ff;
-  }
-  
-  .btn-search {
-    padding: 14px 30px; /* Más grande */
-    background-color: #0077ff;
-    color: white;
-    border: none;
-    border-radius: 10px;
-    font-size: 1.2rem;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
-  }
-  
-  .btn-search:hover {
-    background-color: #0056b3;
-  }
+.select-type {
+  padding: 14px 20px;
+  font-size: 1.2rem;
+  border-radius: 10px;
+  border: 3px solid rgb(97, 87, 226);
+  background-color: white;
+  color: black;
+  outline: none;
+  width: 250px;
+  transition: all 0.3s ease;
+}
+
+.select-type:hover {
+  border-color: #0077ff;
+}
+
+.select-type:focus {
+  border-color: #0056b3;
+  background-color: #e0f0ff;
+}
+
+.btn-search {
+  padding: 14px 30px;
+  background-color: #0077ff;
+  color: white;
+  border: none;
+  border-radius: 10px;
+  font-size: 1.2rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.btn-search:hover {
+  background-color: #0056b3;
+}
   

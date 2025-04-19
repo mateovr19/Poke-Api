@@ -1,5 +1,17 @@
+/**
+ * @version 1.0.0
+ * @author Mateo Velasquez Rodriguez
+ * @email mateo.velasquezr@udea.edu.co
+ */
+/**
+ * @api
+ * @description Archivo de consumo a la API de PokeAPI
+ */
+
+// Base URL de la PokéAPI
 const BASE_URL = "https://pokeapi.co/api/v2"
 
+// Obtiene los primeros 10 Pokémon de un tipo específico
 export async function getPokemonsByType(type) {
     try {
         const response = await fetch(`${BASE_URL}/type/${type.toLowerCase()}`);
@@ -14,6 +26,7 @@ export async function getPokemonsByType(type) {
     }
 }
 
+// Obtiene todos los tipos de Pokémon disponibles
 export async function getAllTypes() {
     try {
         const response = await fetch(`${BASE_URL}/type`);
