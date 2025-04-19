@@ -1,0 +1,208 @@
+h1 {
+  font-size: 3rem; /* Tamaño grande */
+  font-family: 'Poppins', Verdana, Geneva, Tahoma, sans-serif; /* Letra moderna */
+  font-weight: 700;
+  color: white;
+  text-align: center;
+  margin-top: 40px; /* Espacio desde arriba */
+  margin-bottom: 20px; /* Espacio antes del formulario */
+}
+
+body {
+    min-height: 100vh;
+    background-image: linear-gradient(90deg, rgb(30, 70, 247), rgb(248, 30, 212));
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    text-align: center;
+}
+
+@media (max-width: 768px) {
+  body {
+    background-image: linear-gradient(180deg, rgb(30, 70, 247), rgb(248, 30, 212));
+  }
+}
+
+.header {
+    padding: 16px;
+}
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.slider-container {
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.slider-track {
+    display: flex;
+    height: 100%;
+    transition: transform 0.5s ease;
+}
+
+/* Cada slide ocupa toda la pantalla */
+.slide {
+  min-width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+
+/* Contenedor interno */
+
+/* Ajuste general para pantallas pequeñas */
+@media (max-width: 768px) {
+  .slide-inner {
+    flex-direction: column; /* Cambia de fila a columna */
+    width: 90%;
+    height: auto;
+    gap: 20px;
+    padding: 20px 0;
+  }
+
+  .full-img {
+    width: 70%; /* Más pequeña la imagen */
+    max-width: 300px;
+  }
+
+  .info-panel {
+    width: 90%;
+    background: rgba(255, 255, 255, 0.9);
+    text-align: center;
+    box-shadow: none;
+  }
+
+  .slider-button {
+    font-size: 1.5rem;
+    padding: 8px;
+  }
+}
+
+/* Ajuste extremo para móviles pequeños (tipo celulares) */
+@media (max-width: 480px) {
+  .slide-inner {
+    width: 95%;
+  }
+
+  .full-img {
+    width: 80%;
+    max-width: 250px;
+  }
+
+  .info-panel {
+    font-size: 0.9rem;
+    padding: 10px;
+  }
+
+  .btn-search, .select-type {
+    font-size: 0.9rem;
+    padding: 8px;
+  }
+}
+
+.slide-inner {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 100px;
+}
+
+/* Imagen del Pokémon */
+.full-img {
+  width: 900px;
+  max-width: 40%;
+  height: auto;
+  object-fit: contain;
+}
+
+/* Panel de información, siempre visible */
+.info-panel {
+  width: 500px;
+  padding: 30px;
+  background: rgba(255, 255, 255, 0.7); /* 👈 Más neutro y sólido */
+  border-radius: 16px;
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.2);
+  text-align: left;
+  color: black;
+  font-family: 'Poppins', Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 1.2rem; /* 🔥 Letra más grande */
+  line-height: 1.6; /* 🔥 Mejor separación de líneas */
+  border: 2px solid rgba(206, 25, 230, 0.5);
+}
+.slider-button {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: rgba(0, 0, 255, 0.5);
+  border: none;
+  color: white;
+  font-size: 2rem;
+  padding: 10px;
+  cursor: pointer;
+  border-radius: 50%;
+  z-index: 10;
+}
+
+.prev-button {
+  left: 20px;
+}
+
+.next-button {
+  right: 20px;
+}
+
+.form-container {
+  margin-top: 60px; /* MÁS separación del título */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+  flex-wrap: wrap;
+}
+  
+  .select-type {
+    padding: 14px 20px; /* Más padding vertical y horizontal */
+    font-size: 1.2rem; /* Texto más grande */
+    border-radius: 10px;
+    border: 3px solid rgb(97, 87, 226);
+    background-color: white;
+    color: black;
+    outline: none;
+    width: 250px; /* Más ancho */
+    transition: all 0.3s ease;
+  }
+  
+  .select-type:hover {
+    border-color: #0077ff;
+  }
+  
+  .select-type:focus {
+    border-color: #0056b3;
+    background-color: #e0f0ff;
+  }
+  
+  .btn-search {
+    padding: 14px 30px; /* Más grande */
+    background-color: #0077ff;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    font-size: 1.2rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .btn-search:hover {
+    background-color: #0056b3;
+  }
+  

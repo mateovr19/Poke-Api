@@ -1,0 +1,32 @@
+<!-- index.html -->
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>App PokéAPI</title>
+  <link rel="stylesheet" href="styles/main.css" />
+</head>
+<body>
+    <header class="header">
+        <h1 class="title">PokeTypes</h1>
+    </header>
+    <form class ="form-container">
+      <select id="typeSelect" class="select-type">
+        <option value="">Tipo</option>
+      </select>
+        <button type="submit" class="btn-search">Buscar por tipo</button>
+    </form>
+    <div class="slider-container">
+      <div class="slider-track"></div>
+
+      <!-- Flechas de navegación-->
+      <button class="slider-button prev-button">⟵</button>
+      <button class="slider-button next-button">⟶</button>
+    </div>
+ 
+
+  <!-- Scripts de la app -->
+  <script type="module" src="scripts/app.js"></script>
+</body>
+</html>
